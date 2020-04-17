@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo DOM</title>
+    
+    <style>
+
+        body {
+            background: blueviolet;
+            color: white;
+            font: normal 15pt arial;
+        }
+
+        #clique {
+            color: tomato;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Inicando estudo em DOM</h1>
+    <p>
+        Aqui vai sair o resultado.
+    </p>
+    <P>
+        Aprendendo usar o <strong>DOM</strong> em Javascript
+    </P>
+    <div id="clique">Clique em mim</div>
+    
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esta escrito assim. ' + p1.innerText)
+        var d = window.document.getElementById('clique')
+        d.style.background = 'green'
+    </script>
+</body>
+</html>
